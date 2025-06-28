@@ -1,9 +1,11 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from "express";
 import cors from "cors";
 import pool from "./db.js";
 import usersRoutes from "./routes/users.js";
 import authRoutes from "./routes/auth.js";
-import dotenv from 'dotenv';
+
 import reviewRoute from "./routes/review.js";
 import session from "express-session";
 import passport from "passport";
@@ -12,7 +14,7 @@ import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import historyRouter from "./routes/historypage.js";
 
 
-dotenv.config();
+
 
 import pg from "pg";
 
